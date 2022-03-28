@@ -1,0 +1,18 @@
+{
+  "name": "vats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node ./bin/index.js"
+  },
+  "devDependencies": {
+    "zx": "^6.0.7",
+    "chalk-pipe": "^5.1.1",
+    "eslint": "^8.11.0",
+    "inquirer": "^8.2.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.0"
+  }
+}
