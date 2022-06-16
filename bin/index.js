@@ -23,7 +23,7 @@ await spinner(
   () => $`git clone https://github.com/tanghaism/${templateName}.git`
 );
 // 修改项目名称
-await $`mv ./vats-admin-vue-vuecli-template ${projectPath}`;
+await $`mv ./${templateName} ${projectPath}`;
 // 移除模版git信息
 await $`rm -rf ${projectPath}/.git`;
 // 进入项目路径
