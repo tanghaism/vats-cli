@@ -4,6 +4,9 @@
   "main": "index.js",
   "type": "module",
   "license": "MIT",
+  "bin": {
+    "init": "bin/index.js"
+  },
   "scripts": {
     "dev": "node ./bin/index.js"
   },
