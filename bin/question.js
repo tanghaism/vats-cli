@@ -98,41 +98,15 @@ const questions = [
     },
   },
   {
-    type: "confirm",
-    name: "pwa",
-    message: text("是否使用PWA？"),
-    default() {
-      return false;
-    },
-  },
-  {
     type: "input",
-    name: "baseUrl",
-    message: text("请输入生产环境静态资源baseUrl(可以输入cdn域名地址)："),
-    default() {
-      return "./";
-    },
-    when(answers) {
-      return !answers.pwa;
-    },
-  },
-  {
-    type: "confirm",
-    name: "dependencies",
-    message: text("第三方依赖是否使用externals："),
-    default() {
-      return true;
-    },
-  },
-  {
-    type: "confirm",
-    name: "abroad",
-    message: text("第三方依赖是否使用海外CDN节点："),
-    default() {
-      return false;
-    },
-    when(answers) {
-      return answers.dependencies;
+    name: "remote",
+    message: text("请输入git remote url："),
+    validate(value) {
+      if (value.trim()) {
+        return true;
+      }
+
+      return "git remote 不能为空";
     },
   },
 ];

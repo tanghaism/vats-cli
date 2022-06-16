@@ -7,6 +7,11 @@ export const getRootPath = (pathUrl) => {
   return path.resolve(__dirname, `../${pathUrl}`);
 };
 
+// 获取项目路径
+export const getProjectPath = (projectName) => {
+  return `./${projectName}`
+}
+
 // 设置模版缓存目录
 // param {string} cacheDir: 存放模版文件的文件夹名称
 export const getTemplatesDirRootPath = (cacheDir) => {
