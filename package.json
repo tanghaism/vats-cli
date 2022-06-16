@@ -8,7 +8,7 @@
     "dev": "node ./bin/index.js"
   },
   "devDependencies": {
-    "zx": "^6.0.7",
+    "zx": "^7.0.0",
     "chalk-pipe": "^5.1.1",
     "eslint": "^8.11.0",
     "inquirer": "^8.2.1",

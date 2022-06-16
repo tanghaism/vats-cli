@@ -11,7 +11,9 @@
         "sourceType": "module"
     },
     "globals": {
-        "$": true
+        "$": true,
+        "cd": true,
+        "echo": true
     },
     "rules": {
     }
