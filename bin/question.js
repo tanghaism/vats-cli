@@ -23,7 +23,8 @@ const questions = [
     type: "list",
     name: "platform",
     message: text("请选择客户端平台："),
-    choices: ["H5", "Admin", "WebSSR"],
+    // choices: ["H5", "Admin", "WebSSR"],
+    choices: ["Admin"]
   },
   {
     type: "list",
@@ -70,10 +71,10 @@ const questions = [
         name: "Vue3 (AntDesignVue@3 + VueRouter + Pinia + Typescript + Eslint + Prettier)",
         value: "Vue",
       },
-      {
-        name: "React17 (AntDesignReact@5 + ReactRouter + DVA + Typescript + Eslint + Prettier)",
-        value: "React",
-      },
+      // {
+      //   name: "React17 (AntDesignReact@5 + ReactRouter + DVA + Typescript + Eslint + Prettier)",
+      //   value: "React",
+      // },
     ],
     when(answers) {
       return answers.platform === "Admin";
@@ -100,7 +101,7 @@ const questions = [
   {
     type: "input",
     name: "remote",
-    message: text("请输入git remote url："),
+    message: text("请输入git remote url(将模版代码同步到git仓库)："),
     validate(value) {
       if (value.trim()) {
         return true;
