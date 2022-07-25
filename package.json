@@ -1,14 +1,14 @@
 {
-  "name": "vats",
-  "version": "1.0.1",
-  "main": "index.js",
+  "name": "vats-cli",
+  "version": "1.0.2",
+  "main": "vats-cli.js",
   "type": "module",
   "license": "MIT",
   "bin": {
-    "vats-cli init": "node ./bin/index.js"
+    "vats-cli": "node ./bin/vats-cli.js"
   },
   "scripts": {
-    "dev": "node ./bin/index.js"
+    "dev": "node ./bin/vats-cli.js"
   },
   "devDependencies": {
     "zx": "^7.0.0",

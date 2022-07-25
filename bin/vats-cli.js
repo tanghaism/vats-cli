@@ -1,4 +1,5 @@
-#!/usr/bin/env zx
+#!/usr/bin/env node
+
 import "zx/globals";
 import { spinner } from "zx/experimental";
 import inquirer from "inquirer";
