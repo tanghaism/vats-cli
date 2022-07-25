@@ -3,17 +3,17 @@ A front-end scaffolding template to quickly build commands! Include H5, Admin, W
 
 English | [中文](./docs/zh.md)
 
-##How to install
+## How to install
 ```shell
 npm install vats-cli -g
 # or
 yarn global add vats-cli
 ```
 
-##How to use
+## How to use
 ```shell
 vats-cli
 ```
 
-##tips
+## tips
 Now only supports vue-cli or vite to build vue templates
