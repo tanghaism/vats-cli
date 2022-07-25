@@ -1,11 +1,11 @@
 {
   "name": "vats-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "vats-cli.js",
   "type": "module",
   "license": "MIT",
   "bin": {
-    "vats-cli": "node ./bin/vats-cli.js"
+    "vats-cli": "bin/vats-cli.js"
   },
   "scripts": {
     "dev": "node ./bin/vats-cli.js"
