@@ -1,6 +1,6 @@
 {
   "name": "vats-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "vats-cli.js",
   "type": "module",
   "license": "MIT",
@@ -10,11 +10,13 @@
   "scripts": {
     "dev": "node ./bin/vats-cli.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "zx": "^7.0.0",
     "chalk-pipe": "^5.1.1",
+    "inquirer": "^8.2.1"
+  },
+  "devDependencies": {
     "eslint": "^8.11.0",
-    "inquirer": "^8.2.1",
     "nodemon": "^2.0.15",
     "prettier": "^2.6.0"
   }
