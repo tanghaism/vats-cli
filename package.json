@@ -1,6 +1,6 @@
 {
   "name": "vats-cli",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "vats-cli.js",
   "type": "module",
   "license": "MIT",
