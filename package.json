@@ -1,11 +1,11 @@
 {
   "name": "vats",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "type": "module",
   "license": "MIT",
   "bin": {
-    "init": "bin/index.js"
+    "vats-cli init": "node ./bin/index.js"
   },
   "scripts": {
     "dev": "node ./bin/index.js"
