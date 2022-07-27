@@ -24,7 +24,7 @@ const questions = [
     name: "platform",
     message: text("请选择客户端平台<Please select a client platform>："),
     // choices: ["H5", "Admin", "WebSSR"],
-    choices: ["Admin"]
+    choices: ["Admin", "H5"]
   },
   {
     type: "list",
