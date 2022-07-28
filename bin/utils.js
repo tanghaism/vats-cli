@@ -24,7 +24,7 @@ export const getTemplatesDirRootPath = (cacheDir) => {
 
 // 拼接模版仓库名称
 export const getTemplateName = (valueArray) => {
-  return valueArray.map(str => str.toLowerCase()).join('-')
+  return valueArray.filter(str => !!str).map(str => str.toLowerCase()).join('-')
 }
 
 // 修改package.json的name

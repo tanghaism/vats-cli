@@ -23,8 +23,8 @@ const questions = [
     type: "list",
     name: "platform",
     message: text("请选择客户端平台<Please select a client platform>："),
-    // choices: ["H5", "Admin", "WebSSR"],
-    choices: ["Admin", "H5"]
+    // choices: ["H5", "Admin", "SSR"],
+    choices: ["Admin", "H5", "SSR"]
   },
   {
     type: "list",
@@ -41,7 +41,7 @@ const questions = [
       },
     ],
     when(answers) {
-      return answers.platform === "WebSSR";
+      return answers.platform === "SSR";
     },
   },
   {
@@ -86,7 +86,7 @@ const questions = [
     message: text("请选择脚手架<Please select scaffolding>："),
     choices: ["VueCli", "Vite"],
     when(answers) {
-      return answers.language === "Vue" && answers.platform !== "WebSSR";
+      return answers.language === "Vue" && answers.platform !== "SSR";
     },
   },
   {
@@ -95,7 +95,7 @@ const questions = [
     message: text("请选择脚手架<Please select scaffolding>："),
     choices: ["UMI", "Vite"],
     when(answers) {
-      return answers.language === "React" && answers.platform !== "WebSSR";
+      return answers.language === "React" && answers.platform !== "SSR";
     },
   },
   {
